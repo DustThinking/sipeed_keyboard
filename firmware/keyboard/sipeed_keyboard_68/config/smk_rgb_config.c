@@ -20,16 +20,20 @@ RGB_EFF_DESC rgb_effect_descriptor[] = {
 
 RGB_COLOR_DESC rgb_color_descriptor[] = {
     {
-        .color_func = RGB_Color_Fixed,
+         .color_func = RGB_Color_Fixed,
         .func_data = {0x66ccff}
     },
     {
-        .color_func = RGB_Color_Rainbow,
-        .func_data = {1, 0}
+         .color_func = RGB_Color_Rainbow,
+         .func_data = {1, 0}
     },
     {
-        .color_func = RGB_Color_Random,
-        .func_data = {0}
+         .color_func = RGB_Color_Random,
+        .func_data = {0} 
+    },
+    {
+        .color_func = RGB_Color_Gradient,
+        .func_data = { 0xfc466b, 0x3f5efb } //配色方案可以去https://www.coocolors.com/browseGradient找
     }
 };
 
